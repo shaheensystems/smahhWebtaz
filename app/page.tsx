@@ -1,9 +1,14 @@
 import { MoveRight } from 'lucide-react'
 import Link from 'next/link'
-import Image from 'next/image'
 import HomeServiceCard from '@/components/HomeServiceCard'
 import HomeServiceItems from '@/components/HomeServiceItems'
-// import SecurityImage from '@/assets/home_cybersecurity.png'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 const serviceCardContents: { title: string; category: string, content: string, image: string }[] = [
   {
@@ -162,7 +167,15 @@ const Reputations = () => {
   return(
     <>
       <h2 className="text-3xl text-white text-center">Our Reputation</h2>
-
+      <Carousel>
+        <CarouselContent>
+          <CarouselItem>...</CarouselItem>
+          <CarouselItem>...</CarouselItem>
+          <CarouselItem>...</CarouselItem>
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
     </>
   )
 }

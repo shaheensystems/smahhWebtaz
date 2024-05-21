@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '@/assets/smahhLogo.png'
+import logo from '/public/assets/smahhLogo.png'
 import { Button } from './ui/button'
 import { NavMenu } from './NavMenu'
 
@@ -9,7 +9,7 @@ import { NavMenu } from './NavMenu'
 const NavDesktop = () => {
   return (
     <div className='flex flex-row w-full justify-center'>
-      <div className='flex flex-row px-5 py-2 justify-between w-full max-w-[1560px]'>
+      <div className='flex flex-row px-5 py-2 justify-between w-full '>
         <div>
           <Link href="/">
             <Image 

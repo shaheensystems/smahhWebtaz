@@ -62,7 +62,8 @@ const itService: { title: string; content: string, image: string }[] = [
 export default function Home() {
   return (
     <div className='m-0 p-0'>
-      <div className="flex flex-col px-10 w-full min-h-screen items-center bg-midnight-900 bg-[url('../public/assets/background_one.png')] bg-cetner-top bg-cover">   
+      <div className="flex flex-col px-10 w-full min-h-screen items-center
+       bg-midnight-900 bg-cetner-top bg-cover bg-one">   
         <div className="flex flex-col items-start max-w-[1366px] px-5 pt-40 pb-5 gap-8">
         <HomeIntro />
         <HomeServiceCard 
@@ -73,7 +74,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col px-10 w-full items-center bg-midnight-900">   
+      <div className="flex flex-col px-10 w-full items-center
+       bg-midnight-900 bg-two bg-left-top bg-cover">   
         <div className="flex flex-col max-w-[1366px] px-5 pt-40 pb-5 w-full">
           <div className='w-fll py-20'>
             <CecurityImportant />
@@ -89,6 +91,12 @@ export default function Home() {
               image={serviceCardContents[1].image}
           />
           </div>
+        </div>
+      </div>
+      <div className="flex flex-col px-10 w-full items-center
+       bg-midnight-900"> 
+        <div className="flex flex-col max-w-[1366px] px-5 pt-40 pb-5 w-full">
+        
           <div className='w-fll py-20'>
             <HomeServiceItems services={itService}  />
           </div>
@@ -119,9 +127,9 @@ export default function Home() {
             <HomeResourceCard />
           </div>
         </div>
-        <div className="flex flex-col max-w-[1366px] py-20 w-full items-center gap-14">
-          <h2 className='text-5xl'>Any Question?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br />eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div className="flex flex-col max-w-[1366px] py-32 w-full items-center gap-3">
+          <h2 className='text-5xl font-semibold leading-none'>Any Question?</h2>
+          <p className='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br />eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <Button>Contact Us</Button>
         </div>
       </div>

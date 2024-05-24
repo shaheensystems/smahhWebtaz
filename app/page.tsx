@@ -11,13 +11,13 @@ const serviceCardContents: { title: string; category: string, content: string, i
     title: "We are experienced Cybersecurity specialists.",
     category: "CyberSecurity",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex quis nostrud exercitation.ercitation.",
-    image: "/assets/home_cybersecurity.png",
+    image: "/assets/home-cybersecurity.png",
   },
   {
     title: "Proactive we resolve issues promptly.",
     category: "IT Services and  Supports",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex quis nostrud exercitation.ercitation.",
-    image: "/assets/home_ITservices.png",
+    image: "/assets/home-ITservices.png",
   },
 ]
 

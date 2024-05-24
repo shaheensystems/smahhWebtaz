@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import Resource1 from '../public/assets/home_resource1.png'
+import Resource1 from '../public/assets/home-resource1.png'
 import { Separator } from "@/components/ui/separator"
 import { MoveRight } from 'lucide-react'
 

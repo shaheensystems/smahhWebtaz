@@ -5,6 +5,7 @@ import HomeServiceItems from '@/components/HomeServiceItems'
 import HomeCarousel from '@/components/HomeCarousel'
 import HomeLogoCaroucel from '@/components/HomeLogoCaroucel'
 import ResourceCard from '@/components/ResourceCard'
+import AnyQuestion from '@/components/AnyQuestion'
 
 const serviceCardContents: { title: string; category: string, content: string, image: string }[] = [
   {
@@ -62,7 +63,7 @@ export default function Home() {
     <div className='m-0 p-0'>
       <div className="flex flex-col px-10 w-full min-h-screen items-center
        bg-midnight-900 bg-cetner-top bg-cover bg-one">   
-        <div className="flex flex-col items-start max-w-[1366px] px-5 pt-40 pb-5 gap-8">
+        <div className="flex flex-col items-start max-w-[1260px] pt-40 pb-5 gap-8">
         <HomeIntro />
         <HomeServiceCard 
           title={serviceCardContents[0].title} 
@@ -74,7 +75,7 @@ export default function Home() {
 
       <div className="flex flex-col px-10 w-full items-center
        bg-midnight-900 bg-two bg-left-top bg-cover">   
-        <div className="flex flex-col max-w-[1366px] px-5 pt-40 pb-5 w-full">
+        <div className="flex flex-col max-w-[1260px] pt-40 pb-5 w-full">
           <div className='w-fll py-20'>
             <CecurityImportant />
           </div>
@@ -93,7 +94,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col px-10 w-full items-center
        bg-midnight-900"> 
-        <div className="flex flex-col max-w-[1366px] px-5 pt-40 pb-5 w-full">
+        <div className="flex flex-col max-w-[1260px] pt-40 pb-5 w-full">
         
           <div className='w-fll py-20'>
             <HomeServiceItems services={itService}  />
@@ -114,7 +115,7 @@ export default function Home() {
       <div className='flex flex-col items-center w-full pt-32 bg-white'>
         <h2 className='text-3xl font-semibold text-center pb-6'>Resources</h2>
         <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div className="flex flex-col md:flex-row max-w-[1366px] pt-12 pb-5 w-full justify-between gap-14">
+        <div className="flex flex-col md:flex-row max-w-[1260px] pt-12 pb-5 w-full justify-between gap-14">
           <div className='w-full md:w-1/3 shadow-lg'>
             <ResourceCard />
           </div>
@@ -125,9 +126,10 @@ export default function Home() {
             <ResourceCard />
           </div>
         </div>
+        <AnyQuestion />
       </div>
     </div>
-  );
+  )
 }
 
 const HomeIntro = () => {

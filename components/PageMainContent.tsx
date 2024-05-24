@@ -16,7 +16,7 @@ interface PageMainContentProps{
 const PageMainContent = ( {content} : PageMainContentProps) => {
   return (
     <div className="flex flex-col px-10 w-full items-center">
-      <div className="flex flex-col items-start max-w-[1366px] w-full px-5 py-20 gap-3">
+      <div className="flex flex-col items-start max-w-[1260px] w-full px-5 py-20 gap-3">
         <h1 className='text-5xl font-light'>{content.title}</h1>
         <Separator className='bg-midnight-300 h-[3px] mb-10' />
         <div className='flex flex-row justify-between gap-5'>

@@ -2,11 +2,9 @@ import { MoveRight } from 'lucide-react'
 import Link from 'next/link'
 import HomeServiceCard from '@/components/HomeServiceCard'
 import HomeServiceItems from '@/components/HomeServiceItems'
-import Autoplay from 'embla-carousel-autoplay'
 import HomeCarousel from '@/components/HomeCarousel'
 import HomeLogoCaroucel from '@/components/HomeLogoCaroucel'
-import HomeResourceCard from '@/components/HomeResourceCard'
-import { Button } from '@/components/ui/button'
+import ResourceCard from '@/components/ResourceCard'
 
 const serviceCardContents: { title: string; category: string, content: string, image: string }[] = [
   {
@@ -118,19 +116,14 @@ export default function Home() {
         <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <div className="flex flex-col md:flex-row max-w-[1366px] pt-12 pb-5 w-full justify-between gap-14">
           <div className='w-full md:w-1/3 shadow-lg'>
-            <HomeResourceCard />
+            <ResourceCard />
           </div>
           <div className='w-full md:w-1/3 shadow-lg'>
-            <HomeResourceCard />
+            <ResourceCard />
           </div>
           <div className='w-full md:w-1/3 shadow-lg'>
-            <HomeResourceCard />
+            <ResourceCard />
           </div>
-        </div>
-        <div className="flex flex-col max-w-[1366px] py-32 w-full items-center gap-3">
-          <h2 className='text-5xl font-semibold leading-none'>Any Question?</h2>
-          <p className='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br />eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <Button>Contact Us</Button>
         </div>
       </div>
     </div>

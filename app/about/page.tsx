@@ -24,11 +24,27 @@ const partnerLogos: { company: string; image: string, width: number, height: num
     height: 80,
   },
 ]
+
+const featureIcons: { title: string; description: string; image: string }[] = [
+  { title: "Experience",
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    image: '/assets/icon-experienced.png',
+  },
+  { title: "Expertise",
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    image: '/assets/icon-expertise.png',
+  },
+  { title: "Communication",
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    image: '/assets/icon-communication.png',
+  },
+]
+
 const About = () => {
   return (
     <>
       <div className="flex flex-col px-10 w-full items-center
-       bg-midnight-900 bg-cetner-top bg-cover bg-one">
+       bg-midnight-900 bg-cover bg-one">
         <div className="flex flex-row items-start max-w-[1260px] pt-20 mb-14 pb-5 gap-10">
           <div className="w-1/2">
             <h3 className="text-xl text-white pb-4">About Smahh</h3>
@@ -93,30 +109,15 @@ const About = () => {
             </div>
           </div>
           <div className='flex flex-row justify-betweeen pt-10 gap-20'>
-            <div className='w-1/3 flex flex-col items-center'>
-              <Image src='/assets/icon-experienced.png' alt='Experience Icon' width={80} height={80} />
-              <h4 className='text-xl text-white font-semibold pt-5'>Experienced</h4>
-              <p className="text-sm font-light text-white text-center pt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. 
-              </p>
-            </div>
-            <div className='w-1/3 flex flex-col items-center'>
-              <Image src='/assets/icon-experienced.png' alt='Experience Icon' width={80} height={80} />
-              <h4 className='text-xl text-white font-semibold pt-5'>Experienced</h4>
-              <p className="text-sm font-light text-white text-center pt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. 
-              </p>
-            </div>
-            <div className='w-1/3 flex flex-col items-center'>
-              <Image src='/assets/icon-experienced.png' alt='Experience Icon' width={80} height={80} />
-              <h4 className='text-xl text-white font-semibold pt-5'>Experienced</h4>
-              <p className="text-sm font-light text-white text-center pt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. 
-              </p>
-            </div>
+            {featureIcons?.map((item, index) => (
+              <div key={index} className='w-1/3 flex flex-col items-center'>
+                <Image src={item.image} alt='Experience Icon' width={80} height={80} />
+                <h4 className='text-xl text-white font-semibold pt-5'>{item.title}</h4>
+                <p className="text-sm font-light text-white text-center pt-3">
+                  {item.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
         <AnyQuestion />

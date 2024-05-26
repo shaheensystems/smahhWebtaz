@@ -14,7 +14,6 @@ const Nav = () => {
     return <NavDesktop />
   }
   return <NavMobile />
-  
 }
 
 export default Nav

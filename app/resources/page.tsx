@@ -1,10 +1,10 @@
 import PageMainContent from '@/components/PageMainContent'
 import PageTitle from '@/components/PageTitle'
 import React from 'react'
-import ServiceProcess from '../services/ServiceProcess'
 import AnyQuestion from '@/components/AnyQuestion'
 import ResourceCards from './ResourceCards'
 import { MainContent } from '@/components/PageMainContent'
+import ResourceDetails from './ResourceDetails'
 
 const resourceContents: MainContent[]  = [
   { title: "Cybersecurity",
@@ -28,7 +28,7 @@ const Resources = () => {
       eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
     <PageMainContent content={resourceContents[0]} />
     <div className='flex flex-col items-center px-5 py-20 gap-3'>
-      <ServiceProcess />
+      <ResourceDetails />
       <ResourceCards />
       <AnyQuestion />
     </div>

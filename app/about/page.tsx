@@ -54,11 +54,11 @@ const About = () => {
             </p>
           </div>
           <div className="w-1/2 h-[26rem] relative">
-            <div className='absolute z-50 top-0 right-0 shadow-sm'>
+            <div className='absolute z-20 top-0 right-0 shadow-sm'>
               <Image src='/assets/about1.png' width={400} height={250} alt='Office image' />
             </div>
-            <div className='absolute z-40 bottom-0 left-0 shadow-sm'>
-              <Image src='/assets/about2.png' width={400} height={250} alt='Office image' />
+            <div className='absolute z-10 bottom-0 left-0 shadow-sm'>
+              <Image src='/assets/about2.png' width={400} height={250} alt='Wellington image' />
             </div>
           </div>
         </div>

@@ -64,28 +64,28 @@ export const contentIndexes: Content[] = [
         subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         href: "/resources/cyber-risk",
         description: "A modal dialog that interrupts the user with important content and expects a response.",
-        image: '/assets/home-resource1.png'
+        image: '/assets/home-resource2.png'
       },
       {
         title: "Cloud",
         subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         href: "/resources/cloud",
         description: "A modal dialog that interrupts the user with important content and expects a response.",
-        image: '/assets/home-resource1.png'
+        image: '/assets/home-resource3.png'
       },
       {
         title: "Application Security",
         subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         href: "/resources/application-security",
         description: "A modal dialog that interrupts the user with important content and expects a response.",
-        image: '/assets/home-resource1.png'
+        image: '/assets/home-resource4.png'
       },
       {
         title: "Convenience",
         subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         href: "/resources/convenience",
         description: "A modal dialog that interrupts the user with important content and expects a response.",
-        image: '/assets/home-resource1.png'
+        image: '/assets/home-resource5.png'
       },
     ],
   },

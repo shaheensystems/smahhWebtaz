@@ -11,30 +11,42 @@ import {
 import Resource1 from '../public/assets/home-resource1.png'
 import { Separator } from "@/components/ui/separator"
 import { MoveRight } from 'lucide-react'
+import Link from 'next/link'
+
+interface ContentItem {
+  title: string;
+  subTitle: string;
+  href: string;
+  description?: string | null;
+  image: string
+}
+
+interface Props {
+  resourceItem: ContentItem
+}
 
 
-
-const HomeResourceCard = () => {
+const ResourceCard = ({resourceItem}: Props) => {
   return (
     <div>
       <Card>
         <CardHeader>
-          <CardTitle className='font-light'>Cybersecurity</CardTitle>
+          <CardTitle className='font-light'>{resourceItem.title}</CardTitle>
           <Separator />
-          <CardDescription className='pt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</CardDescription>
+          <CardDescription className='pt-3'>{resourceItem.description}</CardDescription>
         </CardHeader>
         <CardContent>
-          <Image src={Resource1} alt="Cybersecurity" />
+          <Image src={resourceItem.image} alt="Cybersecurity" width={300} height={250} />
         </CardContent>
         <CardFooter>
-            <p>
+            <Link href={resourceItem.href}>
               Read more
               <MoveRight className='inline ml-3 text-midnight-300' />
-            </p>       
+            </Link>       
         </CardFooter>
       </Card>
     </div>
   )
 }
 
-export default HomeResourceCard
+export default ResourceCard

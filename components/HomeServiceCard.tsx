@@ -9,15 +9,13 @@ interface Props {
 
 const ServiceInfo = ({title, category, content, image}: Props) => {
   return (
-  <div className='flex flex-col md:flex-row md:justify-around w-full mt-28 p-14 gap-2 bg-white rounded-md shadow-lg'>
-    <div className="flex flex-row item-center w-3/5">
-      <div>
-        <h3 className='text-xl font-semibold text-midnight-300'>{category}</h3>
-        <h1 className="text-2xl md:text-4xl font-medium md:leading-[3rem] pt-3">{title}</h1>
-        <p className='text-lg md:text-xl font-light md:leading-8 pt-3'>{content}</p>
-      </div>
+  <div className='flex flex-col lg:flex-row md:justify-around w-full mt-28 p-10 md:p-20 gap-10 bg-white rounded-md shadow-lg'>
+    <div className="w-full lg:w-1/2 xl:w-3/5 flex flex-col space-y-3 md:pb-5">
+      <h3 className='text-lg lg:text-xl font-semibold text-midnight-300'>{category}</h3>
+      <h1 className="text-3xl lg:text-4xl font-medium md:leading-[2rem]  lg:leading-[3rem]">{title}</h1>
+      <p className='text-base md:text-lg lg:text-xl font-light leading-6 lg:leading-8'>{content}</p>
     </div>
-    <div className="w-2/5">
+    <div className="w-full lg:w-1/2 xl:w-2/5">
       <Image
           src={image}
           alt={`${title} image`}

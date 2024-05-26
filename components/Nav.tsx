@@ -7,7 +7,7 @@ import NavMobile from './NavMobile'
 
 const Nav = () => {
 
-  const isDesktop = useMediaQuery('(min-width: 768px)', {
+  const isDesktop = useMediaQuery('(min-width: 1024px)', {
     initializeWithValue: false,
   })
   if (isDesktop) {

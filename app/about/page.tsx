@@ -44,7 +44,7 @@ const featureIcons: { title: string; description: string; image: string }[] = [
 const About = () => {
   return (
     <>
-      <div className="flex flex-col px-10 w-full items-center
+      <div className="flex flex-col px-5 md:px-10 w-full items-center
        bg-midnight-900 bg-cover bg-one">
         <div className="flex flex-col md:flex-row items-start max-w-[1260px] pt-20 xl:mb-14 pb-10 gap-10">
           <div className="w-full md:w-3/5">

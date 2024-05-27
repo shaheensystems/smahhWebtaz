@@ -27,7 +27,7 @@ const Resources = () => {
       description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
       eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
     <PageMainContent content={resourceContents[0]} />
-    <div className='flex flex-col items-center px-5 py-20 gap-3'>
+    <div className='flex flex-col items-center px-5 md:px-10 gap-3'>
       <ResourceDetails />
       <ResourceCards />
       <AnyQuestion />

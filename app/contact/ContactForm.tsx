@@ -56,10 +56,13 @@ const ContactForm = ({contact}: Props) => {
   }
 
   return (
-    <div className='w-full p-20 bg-white rounded-md'>
-      <h2 className='text-3xl text-center font-medium pb-10'>Inquiry Form</h2>
+    <div className='w-full p-5 sm:p-10 md:p-5 lg:p-10 xl:p-20 bg-white rounded-md'>
+      <h2 className='text-2xl xl:text-3xl text-center font-medium pb-10'>Inquiry Form</h2>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-10 w-full">
+        <form 
+          onSubmit={form.handleSubmit(onSubmit)} 
+          className="space-y-6 xl:space-y-10 w-full"
+        >
           <FormField 
             control={form.control}
             name="name"

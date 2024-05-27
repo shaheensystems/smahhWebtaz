@@ -20,7 +20,7 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
 const NavMobile = () => {
   const pathname = usePathname()
   return (
-    <div className='py-2 flex flex-row justify-center fixed top-0 w-full bg-white'>
+    <div className='py-2 flex flex-row justify-center fixed top-0 w-full bg-white z-50 shadow-md'>
       <Link href="/">
         <Image 
         src={logo}

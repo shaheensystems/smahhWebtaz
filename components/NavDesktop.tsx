@@ -8,7 +8,7 @@ import PhoneIcon from '../public/assets/icon-phone.png'
 const NavDesktop = () => {
   return (
     <div className='flex flex-row w-full justify-center'>
-      <div className='flex flex-row px-5 py-2 justify-between w-full'>
+      <div className='flex flex-row px-10 py-2 justify-between w-full'>
         <div>
           <Link href="/">
             <Image 

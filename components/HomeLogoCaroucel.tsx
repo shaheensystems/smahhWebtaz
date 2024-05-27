@@ -26,7 +26,7 @@ const HomeLogoCaroucel = () => {
         <Image className={styles.logos_slide_image} src={CompanyLogo} alt='Mcrosoft Logo' />
         <Image className={styles.logos_slide_image} src={MicrosoftLogo} alt='Mcrosoft Logo' />
         <Image className={styles.logos_slide_image} src={CiscoLogo} alt='Cisco Logo' />
-      </div>    
+      </div>
   </div>
     
       

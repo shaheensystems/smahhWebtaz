@@ -36,11 +36,12 @@ const Testimonials = () => {
         title="Testimonials"
         description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
+
         <div className="flex flex-col px-10 py-12 w-full items-center">
           {testimonials?.map((item, index) => (
             <div key={index} className="max-w-[1260px] px-5 py-14  w-full">
             <h4 className='text-lg font-medium text-midnight-300 pb-5'>{item.category}</h4>
-            <h2 className='text-4xl pb-5'>{item.title}</h2>
+            <h2 className='text-3xl lg:text-4xl pb-5'>{item.title}</h2>
             <Separator className='bg-midnight-300 h-[3px] mb-10' />
             <div className='flex flex-col md:flex-row'>
               <div className='w-1/4'>

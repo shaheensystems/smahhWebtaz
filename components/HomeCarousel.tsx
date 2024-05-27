@@ -12,7 +12,7 @@ import Autoplay from 'embla-carousel-autoplay'
 
 const HomeCarousel = () => {
   const plugin = useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: true })
+    Autoplay({ delay: 6000, stopOnInteraction: true })
   )
   return (
     <>
@@ -26,26 +26,25 @@ const HomeCarousel = () => {
     <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>
-            <div className="p-1">
-              <Card>
-                <CardContent className="flex items-center justify-center w-full p-6">
-                  <div className='flex flex-col md:flex-row justify-center'>
-                    <div className='w-2/5 flex flex-row'>
-                      <div>
-                        <h2 className='text-6xl font-serif'>&#34;</h2>
-                      </div>
-                      <h2 className="text-4xl font-bold">Excellent Service!<br /> Thanks Smahh Staff</h2>
+              <Card className='border-none bg-midnight-900'>
+                <CardContent className="flex items-center justify-center w-full p-0 md:pt-2">
+                  <div className='flex flex-col lg:flex-row items-center lg:justify-center xl:gap-14'>
+                    <div className='w-full md:w-[80%] lg:w-[60%] xl:w-[45%] flex flex-row'>
+                      <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-white">
+                        <span className='text-3xl lg:text-5xl xl:text-6xl font-serif text-midnight-300 pr-3'>&ldquo;</span>
+                          Excellent Service!<br /><span className='lg:pl-10'>Thanks Smahh Staff</span>
+                      </h2>
                     </div>
-                    <div className='w-2/5'>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                      <h5>Smith Corporation</h5>
+                    <div className='w-full md:w-[80%] lg:w-[38%] xl:w-[45%] pt-8 lg:pt-0'>
+                      <p className='text-white'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                      </p>
+                      <h5 className='font-medium text-white pt-4'>Smith Corporation</h5>
                     </div>
-                  
                   </div>
                 </CardContent>
               </Card>
-            </div>
           </CarouselItem>
         ))}
       </CarouselContent>

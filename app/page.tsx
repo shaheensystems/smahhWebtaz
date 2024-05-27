@@ -7,7 +7,6 @@ import HomeLogoCaroucel from '@/components/HomeLogoCaroucel'
 import ResourceCard from '@/components/ResourceCard'
 import AnyQuestion from '@/components/AnyQuestion'
 import { contentIndexes } from '@/data/data'
-import { Value } from '@radix-ui/react-select'
 
 const serviceCardContents: { title: string; category: string, content: string, image: string }[] = [
   {
@@ -24,86 +23,57 @@ const serviceCardContents: { title: string; category: string, content: string, i
   },
 ]
 
-const securityService: { title: string; content: string, image: string }[] = [
-  {
-    title: "Cybersecurity Audit",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid.",
-    image: "/assets/home-service1.png",
-  },
-  {
-    title: "Incident Response",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    image: "/assets/home-service2.png",
-  },
-  {
-    title: "Cloud Security",
-    content: "Lorem ipsum dolor sit amet, consectetur tempor adipiscing elit, sed do eiusmod tempor incidid.",
-    image: "/assets/home-service3.png",
-  },
-  {
-    title: "Security Training",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid.",
-    image: "/assets/home-service4.png",
-  }
-]
-
-const itService: { title: string; content: string, image: string }[] = [
-  {
-    title: "Professional IT Services",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid.",
-    image: "/assets/home-service5.png",
-  },
-  {
-    title: "IT Policy System",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    image: "/assets/home-service6.png",
-  }
-]
-
-const resourcesSection = contentIndexes.find(section => section.title === 'Resources')
-
 export default function Home() {
   return (
     <div className='m-0 p-0'>
-      <div className="flex flex-col px-10 w-full min-h-screen items-center
+      <div className="flex flex-col px-5 md:px-10 w-full min-h-screen items-center
         bg-midnight-900 bg-cetner-top bg-cover bg-one">   
         <div className="max-w-[1260px] py-20 gap-10">
           <HomeIntro />
-          <HomeServiceCard 
-            title={serviceCardContents[0].title} 
-            category={serviceCardContents[0].category} 
-            content={serviceCardContents[0].content}
-            image={serviceCardContents[0].image} />
+          <HomeServiceCard cardContent={serviceCardContents[0]} />
         </div>
       </div>
 
-      <div className="flex flex-col px-10 w-full items-center
-       bg-midnight-900 bg-two bg-left-top bg-cover">   
-        <div className="flex flex-col max-w-[1260px] pt-20 lg:pt-40 pb-5 w-full">
-          <div className='w-fll py-20'>
+      <div className="flex flex-col px-5 md:px-10 w-full items-center
+       bg-midnight-900 bg-two bg-left-top bg-cover">
+        <div className="flex flex-col max-w-[1260px] pt-20 lg:pt-38  w-full">
+          <div className='w-fll pb-20'>
             <CecurityImportant />
           </div>
+
           <div className='w-fll py-20'>
-            <HomeServiceItems services={securityService}  />
+            <h2 className='text-3xl text-white pb-10'>Smahh Cybersecurity Services</h2>
+            <div className='flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap 
+              w-full justify-between lg:justify-start gap-20 lg:gap-12'>
+                {contentIndexes[0]?.links.slice(0, 4).map((linkItem, index) => (
+                <div key={index} className='w-full md:w-[45%] lg:w-1/4'>
+                <HomeServiceItems services={linkItem} />
+                </div>  
+              ))}
+            </div>
           </div>
+
           <div className='w-fll py-20'>
-            <HomeServiceCard 
-              title={serviceCardContents[1].title} 
-              category={serviceCardContents[1].category} 
-              content={serviceCardContents[1].content}
-              image={serviceCardContents[1].image}
-          />
+            <HomeServiceCard cardContent={serviceCardContents[1]} />
           </div>
         </div>
       </div>
-      <div className="flex flex-col px-10 w-full items-center
+      <div className="flex flex-col px-5 md:px-10 w-full items-center
        bg-midnight-900"> 
-        <div className="flex flex-col max-w-[1260px] pt-40 pb-5 w-full">
-        
-          <div className='w-fll py-20'>
-            <HomeServiceItems services={itService}  />
+        <div className="flex flex-col max-w-[1260px] pt-20 pb-5 w-full">
+          <div className='w-fll pb-20'>
+            <h2 className='text-3xl text-white pb-10'>Smahh IT Services and Supports</h2>
+            <div className='flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap 
+              w-full justify-between lg:justify-start gap-20 lg:gap-12'>
+                {contentIndexes[0]?.links.slice(4, 6).map((linkItem, index) => (
+                <div key={index} className='w-full md:w-[45%] lg:w-1/4'>
+                <HomeServiceItems services={linkItem} />
+                </div>  
+              ))}
+            </div>
           </div>
-          <div className='w-fll pt-20 pb-40'>
+
+          <div className='w-fll pt-20 pb-40 mx-10'>
             <h2 className="text-3xl text-white text-center pb-10">Our Reputation</h2>
             <HomeCarousel />
           </div>
@@ -112,20 +82,30 @@ export default function Home() {
 
       <div className='w-full pt-32 bg-white'>
         <h2 className='text-3xl font-semibold text-center pb-8'>Our Clients</h2>
-        <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          <span className='inline md:block'> 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </span>
+        </p>
       </div>
       <HomeLogoCaroucel />
 
-      <div className='flex flex-col items-center w-full pt-32 px-10 bg-white'>
+      <div className='flex flex-col items-center w-full pt-32 px-5 md:px-10 bg-white'>
         <h2 className='text-3xl font-semibold text-center pb-6'>Resources</h2>
-        <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          <span className='inline md:block'> 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </span>
+        </p>
+
         <div className="flex flex-col lg:flex-row max-w-[1260px] pt-12 pb-5 w-full justify-between gap-14">
-          {contentIndexes[1].links?.slice(0, 3).map((linkItem, index) => (
+          {contentIndexes[1]?.links.slice(0, 3).map((linkItem, index) => (
             <div key={index} className='w-full lg:w-1/3 shadow-lg'>
-              <ResourceCard resourceItem={linkItem} />
+                <ResourceCard linkItem={linkItem} />       
             </div>
-        ))}
+          ))}
         </div>
+
         <AnyQuestion />
       </div>
     </div>
@@ -142,7 +122,7 @@ const HomeIntro = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
         incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <Link href={`/services`} className='text-xl text-white font-semibold'>
+      <Link href={`/services`} className='text-base lg:text-xl text-white font-semibold'>
         Learn about Cybersecurity
         <MoveRight className='inline ml-3 text-midnight-300' />
       </Link>

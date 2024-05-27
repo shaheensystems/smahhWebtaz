@@ -12,34 +12,26 @@ import Resource1 from '../public/assets/home-resource1.png'
 import { Separator } from "@/components/ui/separator"
 import { MoveRight } from 'lucide-react'
 import Link from 'next/link'
-
-interface ContentItem {
-  title: string;
-  subTitle: string;
-  href: string;
-  description?: string | null;
-  image: string
-}
+import { ContentItem } from '@/interface/content'
 
 interface Props {
-  resourceItem: ContentItem
+  linkItem: ContentItem
 }
 
-
-const ResourceCard = ({resourceItem}: Props) => {
+const ResourceCard = ({linkItem}: Props) => {
   return (
     <div>
       <Card>
         <CardHeader>
-          <CardTitle className='font-light'>{resourceItem.title}</CardTitle>
+          <CardTitle className='font-light'>{linkItem.title}</CardTitle>
           <Separator />
-          <CardDescription className='pt-3'>{resourceItem.description}</CardDescription>
+          <CardDescription className='pt-3'>{linkItem.description}</CardDescription>
         </CardHeader>
         <CardContent>
-          <Image src={resourceItem.image} alt="Cybersecurity" width={300} height={250} />
+          {linkItem.image? <Image src={linkItem.image} alt="Cybersecurity" width={300} height={250} /> : null}
         </CardContent>
         <CardFooter>
-            <Link href={resourceItem.href}>
+            <Link href={linkItem.href} className='hover:text-midnight-300 hover:opacity-70'>
               Read more
               <MoveRight className='inline ml-3 text-midnight-300' />
             </Link>       

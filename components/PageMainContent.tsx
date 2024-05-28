@@ -1,16 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 import { Separator } from './ui/separator'
-
-export interface MainContent {
-  title: string;
-  clarification: string;
-  description: string;
-  image: string;
-}
+import { ContentItem } from '@/interface/content'
 
 interface PageMainContentProps{
-  content: MainContent
+  content: ContentItem
 }
 
 const PageMainContent = ( {content} : PageMainContentProps) => {
@@ -22,11 +16,14 @@ const PageMainContent = ( {content} : PageMainContentProps) => {
 
         <div className='flex flex-col-reverse md:flex-row justify-between gap-5 md:gap-20 lg:gap-10'>
           <div className='w-full sm:w-4/5 lg:w-1/2'>
-            <h3 className='text-2xl'>{content.clarification}</h3>
+            <h3 className='text-2xl'>{content.subTitle}</h3>
             <p className='pt-3 md:pt-5'>{content.description}</p>
           </div>
           <div className='w-full sm:2/5 lg:w-1/2'>
-            <Image src={content.image} alt='image' width={500} height={200} className='lg:float-right xl:float-left' />
+            {content.image? 
+              <Image src={content.image} alt='image' width={500} height={200} className='lg:float-right xl:float-left' />
+              : <p>No image</p>
+            }
           </div>
         </div>
       </div>

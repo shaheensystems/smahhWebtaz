@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import Image from 'next/image'
 import AnyQuestion from '@/components/AnyQuestion'
 import aboutImages from '@/public/assets/about-twoImages.png'
@@ -49,20 +49,28 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-start max-w-[1260px] pt-20 xl:mb-14 pb-10 gap-10">
           <div className="w-full md:w-3/5">
             <h3 className="text-xl text-white pb-2 lg:pb-4">About Smahh</h3>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light leading-[2.4rem] md:leading-[2.8rem] lg:leading-[3.8rem] text-white pb-4">We support Local and <br />Global businesses</h1>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light 
+              leading-[2.4rem] md:leading-[2.8rem] lg:leading-[3.8rem] text-white pb-4">
+              We support Local and <br />Global businesses</h1>
             <p className="xl:text-lg text-white lg:pr-10 xl:pr-36">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+              laboris nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
-          <div className="w-full md:w-2/5 h-[32rem] sm:h-[24rem] md:h-[18rem] lg:h-[24rem] xl:h-[26rem] relative">
-            <Image src='/assets/about.png' width={450} height={200} alt='Office image' className='md:float-right invisible md:visible' />
-            <div>
-              <Image src='/assets/about1.png' width={450} height={200} alt='Office image' 
-                className='visible md:invisible absolute top-0 right-0 z-20 md:static' />
-              <Image src='/assets/about2.png' width={450} height={200} alt='Office image' 
-                className='visible md:invisible absolute top-52 sm:top-20 z-10 md:static' />
+          <Suspense fallback={<p className='text-center animate-pulse'>Fetching data...</p>}>
+            <div className="w-full md:w-2/5 h-[32rem] sm:h-[24rem] md:h-[18rem] lg:h-[24rem] xl:h-[26rem] relative">
+              <Image src='/assets/about.png' width={450} height={200} alt='Office image' className='md:float-right invisible md:visible' />
+              <div>
+                <Image src='/assets/about1.png' width={450} height={200} alt='Office image' 
+                  className='visible md:invisible absolute top-0 right-0 z-20 md:static' />
+                <Image src='/assets/about2.png' width={450} height={200} alt='Office image' 
+                  className='visible md:invisible absolute top-52 sm:top-20 z-10 md:static' />
+              </div>
             </div>
-          </div>
+          </Suspense>
         </div>
       </div>
 

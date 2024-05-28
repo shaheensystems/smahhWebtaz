@@ -5,36 +5,36 @@ import AnyQuestion from '@/components/AnyQuestion'
 import PageMainContent from '@/components/PageMainContent'
 import PageTitle from '@/components/PageTitle'
 import ServiceProcess from '@/app/services/ServiceProcess'
-import { MainContent } from '@/components/PageMainContent'
 import { useParams } from 'next/navigation'
-
-
-const serviceContents: MainContent[]  = [
-  { title: "Cybersecurity Audit",
-    clarification: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.", 
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    image: '/assets/home-service1.png'
-  },
-]
+import { contentIndexes } from '@/data/data'
 
 const ServiceDetail = () => {
-  const params = useParams<{slug:string}>();
-  console.log(params)
-  let target = params.slug.replace("-", " ").toUpperCase()
-  console.log("Target", target)
+  const params = useParams<{slug:string}>()
+  const slug = params.slug as string
+  let target = slug.toLowerCase().split('-')
+  target = target.map(element => element.charAt(0).toUpperCase() + element.slice(1))
+  const targetString = target.join(" ")
+  const serviceContent = contentIndexes[0].links.find(content => content.title.includes(targetString) )
+
+  if(!serviceContent){
+    return<div>Service not found</div>
+  }
 
   return (
     <>
-      <PageTitle 
+      <header>
+        <PageTitle 
         title="Services"
         description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
           eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
-      <PageMainContent content={serviceContents[0]} />
-      <div className='flex flex-col items-center gap-3'>
-        <p>{params.slug}</p>
-        <ServiceProcess />
-        <AnyQuestion />
-      </div>
+      </header>
+      <main>
+        <PageMainContent content={serviceContent} />
+        <div className='flex flex-col items-center gap-3'>
+          <ServiceProcess />
+          <AnyQuestion />
+        </div>
+      </main>
     </>
   )
 }

@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from '../styles/logoCarousel.module.css'
-import WhitecliffeLogo from '../public/assets/logo-whitecliffe.png'
-import AmazonLogo from '../public/assets/logo-amazon.png'
-import CompanyLogo from '../public/assets/logo-company.png'
-import GoogleLogo from '../public/assets/logo-google.png'
-import MicrosoftLogo from '../public/assets/logo-microsoft.png'
-import CiscoLogo from '../public/assets/logo-cisco.png'
+import styles from '@/styles/logoCarousel.module.css'
+import WhitecliffeLogo from '@/public/assets/logo-whitecliffe.png'
+import AmazonLogo from '@/public/assets/logo-amazon.png'
+import CompanyLogo from '@/public/assets/logo-company.png'
+import GoogleLogo from '@/public/assets/logo-google.png'
+import MicrosoftLogo from '@/public/assets/logo-microsoft.png'
+import CiscoLogo from '@/public/assets/logo-cisco.png'
 
 const HomeLogoCaroucel = () => {
   return (

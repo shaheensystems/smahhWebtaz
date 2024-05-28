@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '/public/assets/smahhLogo.png'
+import logo from '@/public/assets/smahhLogo.png'
+import PhoneIcon from '@/public/assets/icon-phone.png'
 import { NavMenu } from './NavMenu'
-import PhoneIcon from '../public/assets/icon-phone.png'
 
 const NavDesktop = () => {
   return (

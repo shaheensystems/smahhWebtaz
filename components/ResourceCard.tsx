@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import {
   Card,
   CardContent,
@@ -8,10 +9,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import Resource1 from '../public/assets/home-resource1.png'
 import { Separator } from "@/components/ui/separator"
 import { MoveRight } from 'lucide-react'
-import Link from 'next/link'
 import { ContentItem } from '@/interface/content'
 
 interface Props {

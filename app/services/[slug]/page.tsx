@@ -1,12 +1,11 @@
 'use client'
-
 import React from 'react'
+import { useParams } from 'next/navigation'
+import { contentIndexes } from '@/data/data'
 import AnyQuestion from '@/components/AnyQuestion'
 import PageMainContent from '@/components/PageMainContent'
 import PageTitle from '@/components/PageTitle'
-import ServiceProcess from '@/app/services/ServiceProcess'
-import { useParams } from 'next/navigation'
-import { contentIndexes } from '@/data/data'
+import ServiceProcess from '@/app/services/[slug]/ServiceProcess'
 
 const ServiceDetail = () => {
   const params = useParams<{slug:string}>()

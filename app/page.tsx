@@ -37,23 +37,25 @@ export default function Home() {
       <div className="flex flex-col px-5 md:px-10 w-full items-center
        bg-midnight-900 bg-two bg-left-top bg-cover">
         <div className="flex flex-col max-w-[1260px] pt-20 lg:pt-38  w-full">
-          <div className='w-fll pb-20'>
+          <div className='w-full pb-20'>
             <CecurityImportant />
           </div>
 
-          <div className='w-fll py-20'>
-            <h2 className='text-3xl text-white pb-10'>Smahh Cybersecurity Services</h2>
-            <div className='flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap 
-              w-full justify-between lg:justify-start gap-20 lg:gap-12'>
+          <div className='w-full py-10 md:py-20'>
+            <h2 className='text-2xl sm:text-3xl text-center text-white pb-10'>
+              Smahh Cybersecurity Services
+            </h2>
+            <div className='flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap 
+              w-full justify-between sm:justify-center lg:justify-start gap-10 md:gap-20 lg:gap-12'>
                 {contentIndexes[0]?.links.slice(0, 4).map((linkItem, index) => (
-                <div key={index} className='w-full md:w-[45%] lg:w-1/4'>
-                <HomeServiceItems services={linkItem} />
+                <div key={index} className='w-full sm:w-[40%] lg:w-1/4'>
+                  <HomeServiceItems services={linkItem} />
                 </div>  
               ))}
             </div>
           </div>
 
-          <div className='w-fll py-20'>
+          <div className='w-full py-20'>
             <HomeServiceCard cardContent={serviceCardContents[1]} />
           </div>
         </div>
@@ -62,11 +64,13 @@ export default function Home() {
        bg-midnight-900"> 
         <div className="flex flex-col max-w-[1260px] pt-20 pb-5 w-full">
           <div className='w-fll pb-20'>
-            <h2 className='text-3xl text-white pb-10'>Smahh IT Services and Supports</h2>
-            <div className='flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap 
-              w-full justify-between lg:justify-start gap-20 lg:gap-12'>
+            <h2 className='text-2xl sm:text-3xl text-center text-white pb-10'>
+              Smahh IT Services and Supports
+            </h2>
+            <div className='flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap 
+              w-full justify-between sm:justify-center lg:justify-start gap-10 md:gap-20 lg:gap-12'>
                 {contentIndexes[0]?.links.slice(4, 6).map((linkItem, index) => (
-                <div key={index} className='w-full md:w-[45%] lg:w-1/4'>
+                <div key={index} className='w-full sm:w-[40%] lg:w-1/4'>
                 <HomeServiceItems services={linkItem} />
                 </div>  
               ))}
@@ -74,14 +78,14 @@ export default function Home() {
           </div>
 
           <div className='w-fll pt-20 pb-40 mx-10'>
-            <h2 className="text-3xl text-white text-center pb-10">Our Reputation</h2>
+            <h2 className="text-2xl sm:text-3xl text-white text-center pb-10">Our Reputation</h2>
             <HomeCarousel />
           </div>
         </div>
       </div>
 
       <div className='w-full pt-32 bg-white'>
-        <h2 className='text-3xl font-semibold text-center pb-8'>Our Clients</h2>
+        <h2 className='text-2xl sm:text-3xl font-semibold text-center pb-8'>Our Clients</h2>
         <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
           <span className='inline md:block'> 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -91,17 +95,17 @@ export default function Home() {
       <HomeLogoCaroucel />
 
       <div className='flex flex-col items-center w-full pt-32 px-5 md:px-10 bg-white'>
-        <h2 className='text-3xl font-semibold text-center pb-6'>Resources</h2>
+        <h2 className='text-2xl sm:text-3xl font-semibold text-center pb-6'>Resources</h2>
         <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           <span className='inline md:block'> 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </span>
         </p>
 
-        <div className="flex flex-col lg:flex-row max-w-[1260px] pt-12 pb-5 w-full justify-between gap-14">
+        <div className="flex flex-col md:flex-row max-w-[1260px] pt-12 pb-5 w-full items-center md:justify-between gap-8 xl:gap-14">
           {contentIndexes[1]?.links.slice(0, 3).map((linkItem, index) => (
-            <div key={index} className='w-full lg:w-1/3 shadow-lg'>
-                <ResourceCard linkItem={linkItem} />       
+            <div key={index} className='w-full max-w-[22rem] md:w-1/3 shadow-lg'>
+                <ResourceCard linkItem={linkItem} />     
             </div>
           ))}
         </div>
@@ -149,17 +153,17 @@ const CecurityImportant = () => {
   return (
     <div className='flex flex-col md:justify-around w-full'>
       <div className="w-full pb-7">
-        <h2 className="text-xl md:text-3xl text-white text-center">Why Is Security So Important?</h2>
+        <h2 className="text-2xl sm:text-3xl text-white text-center">Why Is Security So Important?</h2>
       </div>
-      <div className="w-full flex flex-row justify-between">
+      <div className="w-full flex flex-col md:flex-row justify-between">
         {securityPercentages?.map((item, index) => (
-          <div key={index} className='w=1/3 lg:w-60'>
-              <p className={`sm:text-[3.5rem] md:text-[5rem] lg:text-[6.5rem] font-semibold 
+          <div key={index} className='w-full md:w-1/3 lg:w-64'>
+              <p className={`text-[5rem] lg:text-[6.5rem] font-semibold text-center
                 leading-tight ${item.percentage > 20 ? 'text-amber-500' : 'text-midnight-300'}`}>
                 {item.percentage}
                 <span className='text-2xl lg:text-4xl text-white'>%</span>
               </p>
-              <p className='text-xs md:text-sm text-white text-center'>{item.title}</p>
+              <p className='text-xs md:text-sm text-white text-center pb-10 md:pb-0'>{item.title}</p>
           </div>
         ))}
       </div>

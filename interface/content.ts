@@ -12,6 +12,7 @@ export interface SidebarItems {
 }
 
 export interface ContentItem {
+  id?: number |  null
   title: string;
   subTitle: string;
   href: string;

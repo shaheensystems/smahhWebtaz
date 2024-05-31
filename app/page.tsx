@@ -7,6 +7,7 @@ import HomeLogoCaroucel from '@/components/home/HomeLogoCaroucel'
 import ResourceCard from '@/components/ResourceCard'
 import AnyQuestion from '@/components/AnyQuestion'
 import { contentIndexes } from '@/data/data'
+import HomeLogoSlider from '@/components/home/HomeLogoSlider'
 
 const serviceCardContents: { title: string; category: string, content: string, image: string }[] = [
   {
@@ -93,7 +94,7 @@ export default function Home() {
         </p>
       </div>
       <HomeLogoCaroucel />
-
+      <HomeLogoSlider />
       
 
       <div className='flex flex-col items-center w-full pt-32 px-5 md:px-10 bg-white'>

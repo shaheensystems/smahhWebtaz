@@ -10,26 +10,26 @@ import CiscoLogo from '@/public/assets/logo-cisco.png'
 
 const HomeLogoCaroucel = () => {
   return (
-    <div className={styles.logos}>
-      <div className= {styles.logos_slide}>
-        <Image className={styles.logos_slide_image} src={WhitecliffeLogo} alt='Whitecliffe Logo' />
-        <Image className={styles.logos_slide_image} src={AmazonLogo} alt='Amazon Logo' />
-        <Image className={styles.logos_slide_image} src={GoogleLogo} alt='Firebase Logo' />
-        <Image className={styles.logos_slide_image} src={CompanyLogo} alt='Mcrosoft Logo' />
-        <Image className={styles.logos_slide_image} src={MicrosoftLogo} alt='Mcrosoft Logo' />
-        <Image className={styles.logos_slide_image} src={CiscoLogo} alt='Cisco Logo' />
-      </div>
-      <div className= {styles.logos_slide}>
-        <Image className={styles.logos_slide_image} src={WhitecliffeLogo} alt='Whitecliffe Logo' />
-        <Image className={styles.logos_slide_image} src={AmazonLogo} alt='Amazon Logo' />
-        <Image className={styles.logos_slide_image} src={GoogleLogo} alt='Firebase Logo' />
-        <Image className={styles.logos_slide_image} src={CompanyLogo} alt='Mcrosoft Logo' />
-        <Image className={styles.logos_slide_image} src={MicrosoftLogo} alt='Mcrosoft Logo' />
-        <Image className={styles.logos_slide_image} src={CiscoLogo} alt='Cisco Logo' />
-      </div>
-  </div>
-    
-      
+    <div className={styles.container}>
+      <div className={styles.logos}>
+        <div className= {styles.logos_slide}>
+          <Image className={styles.logos_slide_image} src={WhitecliffeLogo} alt='Whitecliffe Logo' />
+          <Image className={styles.logos_slide_image} src={AmazonLogo} alt='Amazon Logo' />
+          <Image className={styles.logos_slide_image} src={GoogleLogo} alt='Firebase Logo' />
+          <Image className={styles.logos_slide_image} src={CompanyLogo} alt='Mcrosoft Logo' />
+          <Image className={styles.logos_slide_image} src={MicrosoftLogo} alt='Mcrosoft Logo' />
+          <Image className={styles.logos_slide_image} src={CiscoLogo} alt='Cisco Logo' />
+        </div>
+        <div className= {styles.logos_slide}>
+          <Image className={styles.logos_slide_image} src={WhitecliffeLogo} alt='Whitecliffe Logo' />
+          <Image className={styles.logos_slide_image} src={AmazonLogo} alt='Amazon Logo' />
+          <Image className={styles.logos_slide_image} src={GoogleLogo} alt='Firebase Logo' />
+          <Image className={styles.logos_slide_image} src={CompanyLogo} alt='Mcrosoft Logo' />
+          <Image className={styles.logos_slide_image} src={MicrosoftLogo} alt='Mcrosoft Logo' />
+          <Image className={styles.logos_slide_image} src={CiscoLogo} alt='Cisco Logo' />
+        </div>
+    </div>
+  </div>     
   )
 }
 

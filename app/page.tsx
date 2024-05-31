@@ -94,6 +94,8 @@ export default function Home() {
       </div>
       <HomeLogoCaroucel />
 
+      
+
       <div className='flex flex-col items-center w-full pt-32 px-5 md:px-10 bg-white'>
         <h2 className='text-2xl sm:text-3xl font-semibold text-center pb-6'>Resources</h2>
         <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,

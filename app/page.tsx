@@ -3,7 +3,6 @@ import Link from 'next/link'
 import HomeServiceCard from '@/components/home/HomeServiceCard'
 import HomeServiceItems from '@/components/home/HomeServiceItems'
 import HomeCarousel from '@/components/home/HomeCarousel'
-import HomeLogoCaroucel from '@/components/home/HomeLogoCaroucel'
 import ResourceCard from '@/components/ResourceCard'
 import AnyQuestion from '@/components/AnyQuestion'
 import { contentIndexes } from '@/data/data'
@@ -93,7 +92,6 @@ export default function Home() {
           </span>
         </p>
       </div>
-      <HomeLogoCaroucel />
       <HomeLogoSlider />
       
 

@@ -131,11 +131,6 @@ export const contentIndexes: Content[] = [
         href: "/contact",
       },
       {
-        title: "Location",
-        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        href: "/contact"
-      },
-      {
         title: "Privacy Policy",
         subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         href: "/privacy",

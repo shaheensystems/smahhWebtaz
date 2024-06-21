@@ -30,15 +30,15 @@ const Resources = () => {
       next = currentId + i
       if(next >= 6){
         next = next-contentLength
-        console.log(next)
+        //console.log(next)
       }
       let resource =  contentIndexes[1].links.find(content => content.id === next)
-      console.log(resource)
+      //console.log(resource)
       if(resoueces){
         resoueces?.push(resource)
       }
     }
-    console.log(resoueces)
+    //console.log(resoueces)
     //resoueces = contentIndexes[1].links.filter(content => content.title !== targetString).slice(0, 3)
   }
 

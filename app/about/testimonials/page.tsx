@@ -40,7 +40,7 @@ const Testimonials = () => {
       <div className="flex flex-col px-5 md:px-10 py-0 md:py-12 w-full items-center">
         {testimonials?.map((item, index) => (
           <div key={index} className="max-w-[1260px] md:px-5 py-10 md:py-14 w-full">
-          <h4 className='text-lg font-medium text-midnight-300 pb-2 md:pb-5'>{item.category}</h4>
+          <h4 className='text-lg font-medium text-midnight-300 pb-2 md:pb-3'>{item.category}</h4>
           <h2 className='text-2xl md:text-3xl lg:text-4xl pb-2 md:pb-5'>{item.title}</h2>
 
           <Separator className='bg-midnight-300 h-[3px] mb-8 md:mb-10' />

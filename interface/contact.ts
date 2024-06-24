@@ -1,10 +1,10 @@
 // import { Timestamp } from "firebase/firestore"
 
 export interface Contact {
-  name?: string,
+  name?: string | undefined,
   email: string,
   topic: string,
-  message?: string
+  message?: string | undefined
     // sentAt?: string | Timestamp
 }
 

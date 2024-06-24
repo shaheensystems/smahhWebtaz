@@ -1,31 +1,32 @@
 "use client"
 import React, { FC, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { Contact } from '@/interface/contact'
+import { Contact } from '../interface/contact'
 import { z } from 'zod'
-import { contactSchema } from '@/ValidationSchemas/contact'
+import { contactSchema } from '../ValidationSchemas/contact'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Controller, useForm } from 'react-hook-form'
-import { Form, FormControl, FormField, FormItem, FormLabel } from '@/components/ui/form'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+import { POST } from '../action/postMail'
+import { Form, FormControl, FormField, FormItem, FormLabel } from './ui/form'
+import { Button } from '../components/ui/button'
+import { Input } from './ui/input'
 import { 
   Select,
   SelectContent, 
   SelectItem,
   SelectTrigger,
   SelectValue,
- } from '@/components/ui/select'
-import { Textarea } from '@/components/ui/textarea'
-import { sendEmail } from '@/lib/sendEmailUtil'
+ } from './ui/select'
+import { Textarea } from './ui/textarea'
 
 
-export type ContactFormData = z.infer<typeof contactSchema>
+type ContactFormData = z.infer<typeof contactSchema>
 
 interface Props {
   contact?: Contact
 }
-const ContactForm: FC = ({contact}: Props) => {
+const ContactFormSpair: FC = ({contact}: Props) => {
+
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState("")
   const router = useRouter()
@@ -35,10 +36,22 @@ const ContactForm: FC = ({contact}: Props) => {
   })
 
   //async function onSubmit(values: z.infer<typeof contactSchema>){
-    async function onSubmit(values: z.infer<typeof contactSchema>){
-      await sendEmail(values);
-      router.push("/")
-      router.refresh()
+    async function onSubmit(){
+    //POST()
+    // try{
+    //   setIsSubmitting(true)
+    //   setError("")
+
+    //   if(values){
+    //     //await POST()
+    //     console.log('message sent')
+    //   }
+    //   router.push("/")
+    //   router.refresh()
+    // }catch(error){
+    //   setError("Unknown Error Occured.")
+    //   setIsSubmitting(false)
+    // }
   }
 
   return (
@@ -132,4 +145,4 @@ const ContactForm: FC = ({contact}: Props) => {
   )
 }
 
-export default ContactForm
+export default ContactFormSpair

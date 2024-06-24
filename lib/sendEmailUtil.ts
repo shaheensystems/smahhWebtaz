@@ -1,6 +1,4 @@
 import { ContactFormData } from '@/app/contact/ContactForm'
-//import { FormData } from '@/components/ContactFormTest'
-//import { Contact } from '@/interface/contact'
 
 export function sendEmail(values: ContactFormData) {
   const apiEndpoint = '/api/email';
@@ -11,9 +9,9 @@ export function sendEmail(values: ContactFormData) {
   })
     .then((res) => res.json())
     .then((response) => {
-      alert(response.message);
+      // alert(response.message)
     })
     .catch((err) => {
-      alert(err);
-    });
+      alert(err)
+    })
 }

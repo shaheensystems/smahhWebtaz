@@ -3,7 +3,7 @@
 export interface Contact {
   name?: string | undefined,
   email: string,
-  topic: string,
+  category: string,
   message?: string | undefined
     // sentAt?: string | Timestamp
 }

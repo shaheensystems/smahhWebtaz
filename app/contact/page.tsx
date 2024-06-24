@@ -2,8 +2,6 @@ import React from 'react'
 import PageTitle from '@/components/PageTitle'
 import Image from 'next/image'
 import ContactForm from './ContactForm'
-import ContactFormTest from '@/components/ContactFormTest'
-
 
 const contactIcons: { title: string; description: string; image: string }[] = [
   { title: "Phone",
@@ -44,11 +42,9 @@ const Contact = () => {
             <div className='w-full lg:w-1/2 xl:w-2/3 xl:ml-24 h-[32.5rem] sm:h-[34rem] md:h-[28rem] xl:md:h-[36rem] relative bg-pink-200'>
               <div className='md:absolute md:-top-20 xl:-top-40 md:rigt-0 w-full'>
                 <ContactForm />
-                {/* <Contact /> */}
               </div>
             </div>
           </div>
-          
      </div>
     </>
   )

@@ -2,10 +2,11 @@
 import React, { FC, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Contact } from '@/interface/contact'
+import { sendEmail } from '@/lib/sendEmailUtil'
 import { z } from 'zod'
 import { contactSchema } from '@/ValidationSchemas/contact'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { Controller, useForm } from 'react-hook-form'
+import { useForm } from 'react-hook-form'
 import { Form, FormControl, FormField, FormItem, FormLabel } from '@/components/ui/form'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -17,7 +18,7 @@ import {
   SelectValue,
  } from '@/components/ui/select'
 import { Textarea } from '@/components/ui/textarea'
-import { sendEmail } from '@/lib/sendEmailUtil'
+import ModalMessage from '@/components/ModalMessage'
 
 
 export type ContactFormData = z.infer<typeof contactSchema>
@@ -25,7 +26,9 @@ export type ContactFormData = z.infer<typeof contactSchema>
 interface Props {
   contact?: Contact
 }
+
 const ContactForm: FC = ({contact}: Props) => {
+  const [ showModal, setShowModal ] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState("")
   const router = useRouter()
@@ -34,11 +37,15 @@ const ContactForm: FC = ({contact}: Props) => {
     resolver: zodResolver(contactSchema)
   })
 
-  //async function onSubmit(values: z.infer<typeof contactSchema>){
-    async function onSubmit(values: z.infer<typeof contactSchema>){
-      await sendEmail(values);
-      router.push("/")
-      router.refresh()
+  async function onSubmit(values: z.infer<typeof contactSchema>){
+    try{
+      setIsSubmitting(true)
+      await sendEmail(values)
+      setShowModal(true)
+      setIsSubmitting(false)
+    }catch(error){
+      setError('Unknown Error')
+    }
   }
 
   return (
@@ -55,20 +62,13 @@ const ContactForm: FC = ({contact}: Props) => {
             defaultValue={contact?.name}
             render={({field}) => (
               <FormItem>
-                <FormLabel>Ticket Title</FormLabel>
+                <FormLabel>Name</FormLabel>
                 <FormControl>
                   <Input placeholder="Your Name" {...field} />
                 </FormControl>
               </FormItem>
             )}
           />
-          {/* <Controller 
-            name="description" 
-            control={form.control}
-            defaultValue={ticket?.description}
-            render={({field}) => (
-            <SimpleMDE placeholder="Description" {...field} />
-          )} /> */}
           <FormField 
             control={form.control}
             name="email"
@@ -86,14 +86,14 @@ const ContactForm: FC = ({contact}: Props) => {
             <FormField 
               control={form.control} 
               name="topic"
-              defaultValue={contact?.topic} 
+              defaultValue={contact?.category} 
               render={({field}) => (
               <FormItem>
-                <FormLabel>Inquiry Topic</FormLabel>
+                <FormLabel>Inquiry Category</FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                   <FormControl>
                     <SelectTrigger>
-                      <SelectValue placeholder="Select Inquiry Topic..." defaultValue={contact?.topic} />
+                      <SelectValue placeholder="Select Inquiry Topic..." defaultValue={contact?.category} />
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
@@ -103,7 +103,7 @@ const ContactForm: FC = ({contact}: Props) => {
                     <SelectItem value="PenetrationTesting">Penetration Testing</SelectItem>
                     <SelectItem value="ITPolicySystem">IT Policy System</SelectItem>
                     <SelectItem value="CybersecurityTraining">Cybersecurity Training</SelectItem>
-                    <SelectItem value="ProfessionalItServices">Professional It Services</SelectItem>
+                    <SelectItem value="ProfessionalItServices">Professional IT Services</SelectItem>
                     <SelectItem value="Other">Other</SelectItem>
                   </SelectContent>
                 </Select>
@@ -128,6 +128,8 @@ const ContactForm: FC = ({contact}: Props) => {
         </form>
       </Form>
       <p className="text-destructive">{error}</p>
+      { showModal ? <ModalMessage /> : null }
+      
     </div>
   )
 }

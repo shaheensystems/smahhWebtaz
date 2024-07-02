@@ -34,8 +34,8 @@ const HomeLogoSlider = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: 2,
+          slidesToScroll: 3
         }
       }
     ]
@@ -92,11 +92,11 @@ const HomeLogoSlider = () => {
     },
   ]
   return (
-    <div className='pt-20 pb-10'>
+    <div className='pt-10 pb-0 md:pt-20 md:pb-10'>
       <Slider {...settings}>
         {logoImages?.map((image, index) => (
-          <div key={index} className='px-20'>
-          <Image src={image.src} alt={image.alt} width={130} height={130}  />
+          <div key={index} className='px-6 md:px-15 lg:px-18'>
+          <Image src={image.src} alt={image.alt} width={130} height={130} />
         </div>
         ))}
       </Slider>

@@ -93,11 +93,11 @@ const About = () => {
         </div>
       </div>
 
-      <div className='flex flex-col items-center px-5 py-5 gap-3'>
-        <h3 className='text-2xl font-semibold pb-8'>Smahh Partners</h3>
-        <div className='flex flex-row justify-between items-center max-w-[1260px] w-full'>
+      <div className='flex flex-col items-center px-15 md:px-10 lg:py-5 gap-3'>
+        <h3 className='text-2xl font-semibold pb-16 md:pb-8'>Smahh Partners</h3>
+        <div className='flex flex-col md:flex-wrap lg:flex-row justify-center lg:justify-between items-center max-w-[1260px] w-full'>
           {partnerLogos?.map((item, index) => (
-            <div key={index} className='w-45'>
+            <div key={index} className='w-[8rem]  md:w-1/2 lg:w-fit pb-20 md:pb-8 item-center flex justify-around lg:justify-none'>
               <Image 
                 src={item.image} 
                 alt={`${item.company} Logo`}
@@ -108,7 +108,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-a px-5 mx:px-10 pt-32 w-full items-center">   
+      <div className="flex flex-col justify-around px-10 mx:px-10 pt-32 w-full items-center">   
         <div className="flex flex-col max-w-[1260px] p-10 lg:p-20 w-full md:gap-10
         bg-midnight-900 rounded-md justify-center shadow-lg">
           <div className='flex flex-col lg:flex-row pb-10'>

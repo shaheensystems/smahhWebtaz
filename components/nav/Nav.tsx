@@ -12,7 +12,9 @@ const Nav = () => {
   if(isDesktop) {
     return <NavDesktop />
   }
-  return <NavMobile />
+  if(!isDesktop){
+    return <NavMobile />
+  }
 }
 
 export default Nav

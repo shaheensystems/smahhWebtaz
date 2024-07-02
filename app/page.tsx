@@ -11,13 +11,13 @@ import HomeLogoSlider from '@/components/home/HomeLogoSlider'
 const serviceCardContents: { title: string; category: string, content: string, image: string }[] = [
   {
     title: "We are experienced Cybersecurity specialists.",
-    category: "CyberSecurity",
+    category: "Cybersecurity",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex quis nostrud exercitation.ercitation.",
     image: "/assets/home-cybersecurity.png",
   },
   {
-    title: "Proactive we resolve issues promptly.",
-    category: "IT Services and  Supports",
+    title: "Proactive, we resolve issues promptly.",
+    category: "IT Services and  Support",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex quis nostrud exercitation.ercitation.",
     image: "/assets/home-ITservices.png",
   },

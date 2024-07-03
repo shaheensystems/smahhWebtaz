@@ -35,7 +35,7 @@ const HomeCarousel = () => {
                           Excellent Service!<br /><span className='lg:pl-10'>Thanks Smahh Staff</span>
                       </h2>
                     </div>
-                    <div className='w-full md:w-[100%] lg:w-[38%] xl:w-[45%] pt-8 lg:pt-0'>
+                    <div className='w-full md:w-[80%] lg:w-[38%] xl:w-[45%] pt-8 lg:pt-0'>
                       <p className='text-white'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.

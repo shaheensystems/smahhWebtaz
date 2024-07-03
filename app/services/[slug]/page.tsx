@@ -23,8 +23,8 @@ const ServiceDetail = () => {
     <>
       <header>
         <PageTitle 
-        title="Services"
-        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+          title="Services"
+          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
           eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
       </header>
       <main>

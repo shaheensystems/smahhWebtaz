@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '@/public/assets/smahhLogo.png'
+import logo from '@/public/assets/smahh-logo.png'
 import PhoneIcon from '@/public/assets/icon-phone.png'
 import { NavMenu } from './NavMenu'
 
@@ -13,7 +13,7 @@ const NavDesktop = () => {
           <Link href="/">
             <Image 
             src={logo}
-            width={250}
+            width={230}
             priority
             alt="Smahh Logo"
             />

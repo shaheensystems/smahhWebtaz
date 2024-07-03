@@ -119,8 +119,8 @@ export default function Home() {
 
 const HomeIntro = () => {
   return (
-  <div className='w-full md:w-4/5 lg:w-3/5 flex flex-col py-10 space-y-8'>
-      <h1 className="text-4xl md:text-5xl lg:text-6xl leading-[3rem] md:leading-[3.7rem] lg:leading-[4.5rem] text-white">
+  <div className='w-full md:w-4/5 lg:w-3/5 flex flex-col py-4 md:py-10 space-y-4 md:space-y-8'>
+      <h1 className="text-3xl md:text-5xl lg:text-6xl leading-[2.5rem] md:leading-[3.7rem] lg:leading-[4.5rem] text-white">
         Trusted Professionals Cybersecurity Solutions and IT Business Support
       </h1>
       <p className='text-lg md:text-xl lg:text-2xl font-light leading-7 lg:leading-10 text-white'>

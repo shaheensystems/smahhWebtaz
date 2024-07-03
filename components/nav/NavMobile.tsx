@@ -1,14 +1,12 @@
 'use client'
 import React, { useState } from 'react'
-import { Dispatch, SetStateAction } from "react"
 import Image from 'next/image'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import logo from '/public/assets/smahhLogo.png'
+import logo from '/public/assets/smahh-logo.png'
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTrigger } from '@/components/ui/sheet'
 import { Button } from '@/components/ui/button'
 // import { SidebarButtonSheet as SidebarButton } from './SidebarButton'
-import { Menu, X } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import { contentIndexes } from '@/data/data'
 import { AccordionButton } from '@/components/AccordionButton'
 import {

@@ -112,13 +112,13 @@ const privacyList: privacyContent[] = [
 const Privacy = () => {
   return (
     <>
-      <header>
+      <div>
         <PageTitle 
         title="Privacy Policy"
         description='Effective Date: 28th May 2024' />
-      </header>
-      <main className='px-10 py-20'>
-        <div className='flex flex-col w-full lg:w-3/5 gap-14'>
+      </div>
+      <div className='p-5 md:p-10 md:py-14'>
+        <div className='flex flex-col w-full lg:w-3/5 gap-7 md:gap-14'>
           <div className='w-full'>
             <h4 className='text-2xl font-medium pb-3'>Your Privacy Matters</h4>
             <p>
@@ -149,7 +149,7 @@ const Privacy = () => {
           ))}
           <p>By using our Site, you consent to this Privacy Policy.</p>
         </div>
-      </main>
+      </div>
     </>
   )
 }

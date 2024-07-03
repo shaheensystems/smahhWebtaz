@@ -20,13 +20,13 @@ const Careers = () => {
 
           <Separator className='bg-midnight-300 h-[3px] mb-8 md:mb-10' />
 
-          <div className='flex flex-col md:flex-row gap-10 xl:gap-5'>
+          <div className='flex flex-col md:flex-row gap-5 md:gap-10 xl:gap-5'>
             <div className='w-full md:w-2/5 xl:w-1/4'>
               <Image src={CareerImage} alt='Testimonial Image' width={260} height={200} />
             </div>
             <div className='w-full md:w-3/5 xl:w-4/5'>
               <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Logo from '../public/assets/smahhLogo-footer.png'
+import Logo from '../public/assets/smahh-logo-footer.png'
 import Link from 'next/link'
 import Linkedin from '../public/assets/linkedin.png'
 import { contentIndexes } from '@/data/data'

@@ -45,7 +45,7 @@ const Testimonials = () => {
 
           <Separator className='bg-midnight-300 h-[3px] mb-8 md:mb-10' />
 
-          <div className='flex flex-col md:flex-row gap-10 xl:gap-5'>
+          <div className='flex flex-col md:flex-row gap-3 md:gap-10 xl:gap-5'>
             <div className='w-full md:w-2/5 xl:w-1/4'>
               <Image src={item.image} alt='Testimonial Image' width={260} height={200} />
               <p className='text-sm font-semibold pt-2'>{item.caption}</p>

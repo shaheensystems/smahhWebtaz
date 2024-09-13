@@ -12,13 +12,13 @@ const serviceCardContents: { title: string; category: string, content: string, i
   {
     title: "We are experienced Cybersecurity specialists.",
     category: "Cybersecurity",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex quis nostrud exercitation.ercitation.",
+    content: "As experienced cybersecurity professionals, we provide tailored solutions to safeguard businesses from evolving threats. Our expert team ensures robust protection and seamless IT support for long-term success.",
     image: "/assets/home-cybersecurity.png",
   },
   {
     title: "Proactive, we resolve issues promptly.",
     category: "IT Services and  Support",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex quis nostrud exercitation.ercitation.",
+    content: "Our IT support services offer businesses reliable, proactive solutions, including system monitoring, network security, and user support, ensuring smooth operations and tailored strategies for long-term success.",
     image: "/assets/home-ITservices.png",
   },
 ]
@@ -124,9 +124,7 @@ const HomeIntro = () => {
         Trusted Professionals Cybersecurity Solutions and IT Business Support
       </h1>
       <p className='text-lg md:text-xl lg:text-2xl font-light leading-7 lg:leading-10 text-white'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      Trusted professionals in cybersecurity and IT business support offer expert solutions to protect businesses from evolving cyber threats while providing reliable technical assistance to ensure smooth operations.</p>
       <Link href={`/services`} className='text-base lg:text-xl text-white font-semibold'>
         Learn about Cybersecurity
         <MoveRight className='inline ml-3 text-midnight-300' />
@@ -137,16 +135,16 @@ const HomeIntro = () => {
 
 const securityPercentages: { title: string; percentage: number }[] = [
   {
-    title: "Lorem ipsum dolor sit amet",
-    percentage: 85.5,
+    title: "Revenue Growth",
+    percentage: 18,
   },
   {
-    title: "Lorem ipsum dolor sit amet",
-    percentage: 34.5,
+    title: "Data Breach Prevention",
+    percentage: 98,
   },
   {
-    title: "Lorem ipsum dolor sit amet",
-    percentage: 10.5,
+    title: "Digital Transformation Success",
+    percentage: 600,
   },
 ]
 

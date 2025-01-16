@@ -4,7 +4,7 @@ import { useParams } from 'next/navigation'
 import { contentIndexes } from '@/data/data'
 import AnyQuestion from '@/components/AnyQuestion'
 import ResourceCard from '@/components/ResourceCard'
-import ResourceDetails from '@/app/resources/[slug]/ResourceDetails'
+
 import PageMainContent from '@/components/PageMainContent'
 import PageTitle from '@/components/PageTitle'
 import { ContentItem } from '@/interface/content'
@@ -47,8 +47,7 @@ const Resources = () => {
     <>
     <PageTitle
       title="Resources"
-      description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
+      description='Explore these resources to learn more about cybersecurity.' />
     <PageMainContent content={serviceContent} />
     <div className='flex flex-col items-center px-5 md:px-10 gap-3'>
    \

@@ -24,8 +24,7 @@ const ServiceDetail = () => {
       <header>
         <PageTitle 
           title="Services"
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
+          description='Discover expert cybersecurity services designed to protect your business. From threat analysis to tailored security solutions, we ensure your data stays safe and secure.' />
       </header>
       <main>
         <PageMainContent content={serviceContent} />

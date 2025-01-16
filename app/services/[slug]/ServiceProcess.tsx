@@ -4,17 +4,17 @@ const processes: { id: number; title: string; description: string}[] = [
   {
     id: 1,
     title: "Determine Scope",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    description:"Defining the scope is the first critical step in any cybersecurity process. It involves identifying the systems, data, and assets requiring protection, as well as understanding their value and role within the organisation. By outlining boundaries and priorities, you ensure clarity and focus, which helps allocate resources efficiently and minimise vulnerabilities within your chosen scope.",
   },
   {
     id: 2,
     title: "Identify Threats",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    description:"Understanding potential threats is essential to safeguard your assets. This step includes analysing risks, recognising vulnerabilities, and identifying possible threat actors, such as hackers or malicious software. By mapping out potential attack vectors and prioritising threats based on their likelihood and impact, you can focus on critical security gaps and anticipate future challenges effectively.",
   },
   {
     id: 3,
     title: "Plan Response",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    description:"Planning an effective response ensures that your organisation is prepared for potential security incidents. This step involves developing action plans, establishing incident response protocols, and assigning roles and responsibilities to key team members. Proactive preparation minimises downtime, mitigates damage, and ensures a swift, coordinated recovery in the face of cybersecurity threats.",
   },
 ]
 

@@ -3,7 +3,7 @@ import { Content } from '@/interface/content'
 export const contentIndexes: Content[] = [
   {
     title: "Services",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description:"Explore our range of expert cybersecurity services tailored to protect your organisation's data and systems.",
     links: [
       { 
         title: "Cybersecurity Audit",
@@ -51,93 +51,93 @@ export const contentIndexes: Content[] = [
   },
   {
     title: "Resources",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description:"Access valuable resources to stay informed and enhance your organisation's cybersecurity resilience.",
     links: [
       {
         id: 1,
         title: "Cybersecurity",
-        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        subTitle: "Explore comprehensive guides and insights to strengthen your cybersecurity practices.",
         href: "/resources/cybersecurity",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        description: "Dive into expert articles, case studies, and tutorials to help you enhance your organisation's cybersecurity. Learn about the latest trends, best practices, and tools to mitigate risks and safeguard critical assets. Our resources provide actionable insights to keep you ahead of emerging threats, ensuring robust protection for your business and its data.",
         image: '/assets/resource1.png'
       },
       {
         id: 2,
         title: "Cyber Risk",
-        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        subTitle: "Understand and manage cyber risks to protect your organisation effectively.",
         href: "/resources/cyber-risk",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        description: "Gain insights into identifying, assessing, and mitigating cyber risks. Explore in-depth analysis, strategies, and case studies to help you manage vulnerabilities and ensure compliance with regulatory requirements. Our resources equip you with the knowledge to develop effective risk management frameworks that safeguard your business operations and data assets.",
         image: '/assets/resource2.png'
       },
       {
         id: 3,
         title: "Cloud",
-        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        subTitle: "Leverage secure cloud solutions to enhance productivity and data protection.",
         href: "/resources/cloud",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        description: "Discover the benefits of secure cloud solutions with our resources. From migration strategies to compliance guidelines, our materials help you optimise cloud-based systems while protecting your data. Learn about the latest tools and technologies that empower organisations to scale effectively while maintaining robust security protocols.",
         image: '/assets/resource3.png'
       },
       {
         id: 4,
         title: "Application Security",
-        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        subTitle: "Protect your applications with effective security measures and insights.",
         href: "/resources/application-security",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        description: "Explore expert guidance on securing applications from development to deployment. Our resources provide valuable knowledge on identifying vulnerabilities, implementing protective measures, and ensuring ongoing security compliance. Learn how to protect critical applications against modern cyber threats, enabling secure and reliable performance for your users.",
         image: '/assets/resource4.png'
       },
       {
         id: 5,
         title: "Convenience",
-        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        subTitle: "Simplify cybersecurity with our user-friendly solutions and resources.",
         href: "/resources/convenience",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        description: "Make cybersecurity management easier with our practical and user-friendly resources. From tools to best practices, we provide solutions that streamline security processes without compromising effectiveness. Our materials help you save time and effort while ensuring your organisation's systems remain secure and efficient.",
         image: '/assets/resource5.png'
       },
     ],
   },
   {
     title: "About",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description:"Learn about our mission, values, and commitment to empowering organisations through cybersecurity.",
     links: [
       {
         title: "About Smahh",
-        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        subTitle: "Discover our journey, vision, and dedication to cybersecurity excellence.",
         href: "/about"
       },
       {
         title: "Testimonials",
-        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        subTitle: "Read what our clients say about their experience with us.",
         href: "/about/testimonials",
       },
       {
         title: "Blog",
-        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        subTitle: "Stay updated with insights and news from the world of cybersecurity.",
         href: "/about/blog",
       },
       {
         title: "Careers",
-        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        subTitle: "Join our team and make an impact in the cybersecurity industry.",
         href: "/about/careers",
       },
     ],
   },
   {
     title: "Contact",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description:"Get in touch with us for expert cybersecurity support and solutions.",
     links: [
       {
         title: "Contact Us",
-        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        subTitle: "Reach out to our team for assistance or inquiries.",
         href: "/contact",
       },
       {
         title: "Privacy Policy",
-        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        subTitle: "Understand how we protect your data and ensure your privacy.",
         href: "/privacy",
       },
       {
         title: "Terms of Use",
-        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        subTitle: "Learn about the terms governing the use of our services.",
         href: "/terms",
       },
     ],

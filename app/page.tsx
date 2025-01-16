@@ -86,22 +86,14 @@ export default function Home() {
 
       <div className='w-full pt-32 bg-white'>
         <h2 className='text-2xl sm:text-3xl font-semibold text-center pb-8'>Our Clients</h2>
-        <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          <span className='inline md:block'> 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </span>
-        </p>
+        <p className='text-center'></p>
       </div>
       <HomeLogoSlider />
       
 
       <div className='flex flex-col items-center w-full pt-32 px-5 md:px-10 bg-white'>
         <h2 className='text-2xl sm:text-3xl font-semibold text-center pb-6'>Resources</h2>
-        <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          <span className='inline md:block'> 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </span>
-        </p>
+        <p className='text-center'></p>
 
         <div className="flex flex-col md:flex-row max-w-[1260px] pt-12 pb-5 w-full items-center md:justify-between gap-8 xl:gap-14">
           {contentIndexes[1]?.links.slice(0, 3).map((linkItem, index) => (

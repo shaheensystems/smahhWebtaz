@@ -51,7 +51,7 @@ const Resources = () => {
       eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
     <PageMainContent content={serviceContent} />
     <div className='flex flex-col items-center px-5 md:px-10 gap-3'>
-      <ResourceDetails />
+   \
       <div className="flex flex-col lg:flex-row max-w-[1260px] pt-12 pb-5 w-full justify-between gap-14">
         {resoueces?.map((linkItem, index) => (
           <div key={index} className='w-full lg:w-1/3 shadow-lg'>

@@ -10,8 +10,7 @@ const Careers = () => {
     <>
       <PageTitle
         title="Careers"
-        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
+        description='' />
 
       <div className="flex flex-col px-5 md:px-10 py-0 md:py-12 w-full items-center">
           <div className="max-w-[1260px] md:px-5 py-10 md:py-14 w-full">
@@ -25,8 +24,7 @@ const Careers = () => {
               <Image src={CareerImage} alt='Testimonial Image' width={260} height={200} />
             </div>
             <div className='w-full md:w-3/5 xl:w-4/5'>
-              <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+              <p className='text-lg'></p>
             </div>
           </div>
         </div>

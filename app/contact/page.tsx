@@ -23,8 +23,7 @@ const Contact = () => {
     <>
       <PageTitle
         title="Contact Us"
-        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
+        description='Contact us to discuss further.' />
         <div className="flex flex-col px-5 md:px-10 py-5 w-full items-center bg-gray-200">
 
           <div className='flex flex-col md:flex-row items-start max-w-[1260px] pt-5 md:pt-10 mb-14 pb-5 gap-3 xl:gap-10 w-full'>

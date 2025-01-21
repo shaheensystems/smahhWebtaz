@@ -84,7 +84,7 @@ const About = () => {
               Our solutions are crafted to address your unique challenges, helping you stay ahead in today’s 
               competitive landscape. We take pride in delivering personalised support that drives meaningful outcomes.
             </p>
-            <h4 className='text-lg font-semibold pt-3'>Managing Director <span className='font-normal pl-2'>Shahbaz Pervez</span></h4>
+            <h4 className='text-lg font-semibold pt-3'>Managing Director <span className='font-normal pl-2'>Shahbaz Chattha</span></h4>
           </div>
         </div>
       </div>

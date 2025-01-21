@@ -76,11 +76,11 @@ const About = () => {
         <div className="flex flex-col md:flex-row max-w-[1260px] px-5 md:px-10 lg:px-20 py-10 lg:py-14 w-full gap-8 lg:gap-14 
         bg-gray-200 rounded-md justify-center items-center shadow-lg">
           <div className='md:pr-2 lg:pr-20'>
-            <Image src="/assets/about-manager.png" alt="Manager Image" width={200} height={200} />
+            <Image src="/assets/about-manager.jpeg" alt="Manager Image" width={200} height={200} />
           </div>
           <div className='w-full md:w-3/5'>
             <p className="text-lg">
-              Under the leadership of Shahbaz Pervez, we have built a reputation for excellence and reliability. 
+              Under the leadership of Shahbaz Chattha, we have built a reputation for excellence and reliability. 
               Our solutions are crafted to address your unique challenges, helping you stay ahead in today’s 
               competitive landscape. We take pride in delivering personalised support that drives meaningful outcomes.
             </p>

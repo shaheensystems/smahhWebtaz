@@ -34,8 +34,8 @@ export const contentIndexes: Content[] = [
         image: '/assets/home-service4.png'
       },
       {
-        title: "Cybersecurity Training",
-        subTitle: "Empower your team with expert cybersecurity training to defend against threats.",
+        title: "Professional Development Training",
+        subTitle: "Empower your team with expert training to defend against threats.",
         href: "/services/cybersecurity-training",
         description: "Equip your team with essential skills through our expert cybersecurity training. We offer comprehensive courses designed to enhance your staff's ability to identify, prevent, and respond to cyber threats. Our training covers the latest security practices, threat landscapes, and compliance requirements, ensuring your organisation stays ahead of evolving risks. Invest in your team's knowledge to protect your assets and maintain robust security protocols.",
         image: '/assets/home-service5.png'
